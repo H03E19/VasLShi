@@ -96,7 +96,7 @@
 ## 🔗 شبکه‌های اجتماعی
 
 - Telegram: https://t.me/vasLShi 
-- GitHub: https://github.com/H03E1N/VasLShi 
+- GitHub: https://github.com/H03E19/VasLShi
 
 ---
 
