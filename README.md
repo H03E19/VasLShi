@@ -1,2 +1,304 @@
-# VasLShi
-توسعه داده شده توسط تیم وصل شی
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>وصلشی | معرفی پروژه</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      background: #0b1220;
+      color: #e5e7eb;
+    }
+
+    .hero {
+      height: 40vh;
+      background: linear-gradient(135deg, #0ea5e9, #1e293b);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 24px;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #38bdf8;
+      color: #0b1220;
+      padding: 6px 12px;
+      border-radius: 10px;
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+
+    /* CARD */
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      margin: 12px 0;
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px;
+      cursor: pointer;
+    }
+
+    .card-header-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+    }
+
+    .card-header i {
+      color: #38bdf8;
+    }
+
+    .toggle {
+      transition: 0.3s;
+      color: #38bdf8;
+    }
+
+    .card.active .toggle {
+      transform: rotate(180deg);
+    }
+
+    .desc {
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.5s ease;
+      padding: 0 14px;
+      font-size: 13px;
+      line-height: 2;
+      opacity: 0.9;
+    }
+
+    .card.active .desc {
+      max-height: 400px;
+      padding-bottom: 14px;
+    }
+
+    /* SOCIAL */
+    .social {
+      margin: 40px 0 90px;
+      text-align: center;
+    }
+
+    .social-title {
+      margin-bottom: 15px;
+      font-size: 13px;
+      opacity: 0.8;
+    }
+
+    .social-box {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .social-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 18px;
+      border-radius: 14px;
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+    }
+
+    .telegram {
+      background: linear-gradient(135deg, #24a1de, #0088cc);
+    }
+
+    .github {
+      background: linear-gradient(135deg, #333, #111);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      opacity: 0.6;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="hero">
+    <h1>🚀 پروژه وصلشی</h1>
+    <p>سامانه فروش حرفه‌ای بر پایه 3X-UI</p>
+  </div>
+
+  <div class="container">
+
+    <div class="badge">معرفی پروژه ی ما</div>
+
+    <!-- 1 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-header-left">
+          <i class="fa-solid fa-plug"></i>
+          <span>معماری API مستقل</span>
+        </div>
+        <i class="fa-solid fa-chevron-down toggle"></i>
+      </div>
+      <div class="desc">
+        سیستم به صورت کامل جدا از هسته اصلی 3X-UI طراحی شده است.<br>
+        هیچ وابستگی مستقیم به فایل‌های داخلی پنل وجود ندارد.<br>
+        ارتباط فقط از طریق API استاندارد و امن انجام می‌شود.<br>
+        این ساختار باعث افزایش امنیت کلی سیستم شده است.<br>
+        همچنین از بروز خطا هنگام آپدیت پنل جلوگیری می‌کند.<br>
+        امکان توسعه راحت‌تر در آینده فراهم شده است.<br>
+        زیرساخت کاملاً ماژولار و قابل گسترش طراحی شده است.<br>
+        این معماری برای پروژه‌های بزرگ بسیار پایدار است.
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-header-left">
+          <i class="fa-solid fa-code"></i>
+          <span>توسعه با Go</span>
+        </div>
+        <i class="fa-solid fa-chevron-down toggle"></i>
+      </div>
+      <div class="desc">
+        این پروژه با زبان Go توسعه داده شده است.<br>
+        Go به دلیل سرعت بسیار بالا انتخاب شده است.<br>
+        پردازش همزمان درخواست‌ها را به‌خوبی مدیریت می‌کند.<br>
+        مصرف منابع بسیار پایین و بهینه دارد.<br>
+        برای سیستم‌های فروش با ترافیک بالا مناسب است.<br>
+        پایداری و امنیت بالایی در سطح سرور ارائه می‌دهد.<br>
+        زمان پاسخ‌دهی سیستم بسیار سریع طراحی شده است.<br>
+        این انتخاب برای مقیاس‌پذیری آینده بسیار مهم است.
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-header-left">
+          <i class="fa-solid fa-user"></i>
+          <span>داشبورد کاربری</span>
+        </div>
+        <i class="fa-solid fa-chevron-down toggle"></i>
+      </div>
+      <div class="desc">
+        هر کاربر دارای داشبورد اختصاصی و شخصی است.<br>
+        اطلاعات سرویس‌های فعال به صورت لحظه‌ای نمایش داده می‌شود.<br>
+        تاریخ انقضا و وضعیت اشتراک قابل مشاهده است.<br>
+        میزان مصرف کاربر به صورت دقیق گزارش می‌شود.<br>
+        امکان تمدید سرویس‌ها به راحتی فراهم شده است.<br>
+        تراکنش‌ها و پرداخت‌ها در یک بخش جدا مدیریت می‌شوند.<br>
+        رابط کاربری ساده و کاملاً موبایلی طراحی شده است.<br>
+        هدف، تجربه کاربری سریع و بدون پیچیدگی است.
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-header-left">
+          <i class="fa-solid fa-wallet"></i>
+          <span>کیف پول داخلی</span>
+        </div>
+        <i class="fa-solid fa-chevron-down toggle"></i>
+      </div>
+      <div class="desc">
+        سیستم کیف پول داخلی برای کاربران طراحی شده است.<br>
+        امکان شارژ حساب از طریق کارت‌به‌کارت وجود دارد.<br>
+        همچنین پرداخت با ارزهای دیجیتال پشتیبانی می‌شود.<br>
+        موجودی به صورت لحظه‌ای در حساب کاربر نمایش داده می‌شود.<br>
+        فرآیند خرید سرویس‌ها بسیار سریع انجام می‌شود.<br>
+        امنیت تراکنش‌ها در سطح بالایی پیاده‌سازی شده است.<br>
+        گزارش کامل پرداخت‌ها برای کاربر موجود است.<br>
+        هدف ساده‌سازی فرآیند پرداخت و خرید است.
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-header-left">
+          <i class="fa-brands fa-telegram"></i>
+          <span>اتصال تلگرام</span>
+        </div>
+        <i class="fa-solid fa-chevron-down toggle"></i>
+      </div>
+      <div class="desc">
+        سیستم به ربات تلگرام اختصاصی متصل می‌شود.<br>
+        اعلان‌های مهم برای کاربران ارسال می‌شود.<br>
+        وضعیت سرویس‌ها از طریق تلگرام اطلاع‌رسانی می‌شود.<br>
+        مدیریت کاربران از طریق ربات امکان‌پذیر است.<br>
+        پیام‌های سیستمی به صورت خودکار ارسال می‌شوند.<br>
+        سرعت اطلاع‌رسانی بسیار بالا و لحظه‌ای است.<br>
+        قابلیت توسعه برای امکانات بیشتر وجود دارد.<br>
+        این بخش نقش مهمی در ارتباط با کاربران دارد.
+      </div>
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="social">
+      <p class="social-title">مارو در صفحات رسمی دنبال کنید</p>
+
+      <div class="social-box">
+        <a class="social-btn telegram" href="https://t.me/yourchannel">
+          <i class="fa-brands fa-telegram"></i> تلگرام
+        </a>
+
+        <a class="social-btn github" href="https://github.com/yourrepo">
+          <i class="fa-brands fa-github"></i> گیت‌هاب
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    تیم وصلشی • توسعه مدرن و پایدار
+  </div>
+
+  <script>
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach(card => {
+      card.addEventListener("click", () => {
+        cards.forEach(c => {
+          if (c !== card) c.classList.remove("active");
+        });
+        card.classList.toggle("active");
+      });
+    });
+  </script>
+
+</body>
+</html>
