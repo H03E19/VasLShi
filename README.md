@@ -95,8 +95,8 @@
 
 ## 🔗 شبکه‌های اجتماعی
 
-- Telegram: https://t.me/yourchannel  
-- GitHub: https://github.com/yourrepo  
+- Telegram: https://t.me/vasLShi 
+- GitHub: https://github.com/H03E1N/VasLShi 
 
 ---
 
